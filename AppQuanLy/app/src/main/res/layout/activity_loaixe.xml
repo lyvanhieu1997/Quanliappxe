@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".LoaiXe">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Loại xe"
+        android:textSize="40sp"
+        android:background="#000000"
+        android:textColor="#FFFFFF"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/edTenLoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên loại"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/edXuatXu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Xuất xứ"
+        android:textSize="24dp"/>
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnThem"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bnt"
+            android:drawableLeft="@drawable/add"
+            android:drawablePadding="10dp"
+            android:layout_marginRight="20dp"
+            android:text="Thêm"
+            />
+
+        <Button
+            android:id="@+id/btnSua"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bnt"
+            android:drawableLeft="@drawable/repair"
+            android:drawablePadding="10dp"
+            android:text="Sửa" />
+
+        <Button
+            android:id="@+id/btnXoa"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bnt"
+            android:drawableLeft="@drawable/delete"
+            android:drawablePadding="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="Xóa" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#000000"
+            android:gravity="center"
+            android:text="DS Loại Xe"
+            android:textColor="#FFFFFF"
+            android:textSize="35dp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/btnThemXe"
+            android:layout_marginTop="10dp"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/bnt"
+            android:drawablePadding="10dp"
+            android:text="Thêm Xe" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="3"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Loại xe"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Xuất xứ"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@drawable/check"></TextView>
+
+    </LinearLayout>
+
+        <ListView
+        android:id="@+id/listViewLoaiXe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

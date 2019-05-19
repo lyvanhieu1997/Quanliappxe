@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <gradient  android:startColor="@android:color/background_light"
+        android:endColor="@android:color/background_light"
+        android:angle="270"
+        />
+        <stroke android:color="#000000"
+            android:width="2dp"/>              <!-- Màu và độ rộng của viền -->
+
+        <corners android:radius="4dp"/>         <!-- Thiết lập góc cạnh của nút -->
+
+    </shape>

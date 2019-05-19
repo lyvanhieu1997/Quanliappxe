@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".QuanLyXe">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Quản lý xe"
+        android:background="#000000"
+        android:textColor="#FFFFFF"
+        android:textStyle="normal"
+        android:textSize="40sp" />
+
+    <EditText
+        android:id="@+id/edTenXe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên xe"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/edDungTich"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Dung tích"
+        android:textSize="24dp"/>
+
+    <EditText
+        android:id="@+id/edDonGia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Đơn giá"
+        android:textSize="24dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Tên loại"
+            android:textSize="24dp" />
+
+        <Spinner
+            android:id="@+id/spLoaiXe"
+
+            android:layout_width="300dp"
+            android:layout_height="match_parent"></Spinner>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnThem"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bnt"
+            android:drawableLeft="@drawable/add"
+            android:drawablePadding="10dp"
+            android:layout_marginRight="20dp"
+            android:text="Thêm"
+            />
+
+        <Button
+            android:id="@+id/btnSua"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bnt"
+            android:drawableLeft="@drawable/repair"
+            android:drawablePadding="10dp"
+            android:text="Sửa" />
+
+        <Button
+            android:id="@+id/btnXoa"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bnt"
+            android:drawableLeft="@drawable/delete"
+            android:drawablePadding="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="Xóa" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#000000"
+        android:gravity="center"
+        android:text="Danh Sách Xe"
+        android:textColor="#FFFFFF"
+        android:textSize="35dp"
+        android:textStyle="normal" />
+
+    <LinearLayout
+        android:weightSum="3"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="#000000"
+            android:textStyle="normal"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên Xe"/>
+
+        <TextView
+            android:textColor="#000000"
+            android:textStyle="normal"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dung Tích"/>
+
+        <TextView
+            android:textColor="#000000"
+            android:textStyle="normal"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đơn Giá"/>
+
+        <TextView
+            android:textColor="#000000"
+            android:textStyle="normal"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mã Loại"/>
+
+        <TextView
+            android:id="@+id/isCheck"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@drawable/check" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewXe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
